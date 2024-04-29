@@ -39,7 +39,7 @@ class Ex12 extends StatelessWidget {
                       border: Border.all(width: 10),
                       image: DecorationImage(
                         scale: 1.0,
-                        image: AssetImage('assets/images/Gang ho-dong.jpg',)
+                        image: AssetImage('assets/images/Gangho-dong.jpg',)
                       )
                       // borderRadius: BorderRadius.circular(100)
                     ),
@@ -239,7 +239,9 @@ class Ex12 extends StatelessWidget {
                     height: 50,
                     margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
                     child: ElevatedButton(
-                        onPressed: (){},
+                        onPressed: (){
+                          Navigator.pushNamed(context, '/');
+                        },
                         child: Text('기록'),)
                   ),
                   Container(
@@ -247,7 +249,9 @@ class Ex12 extends StatelessWidget {
                     height: 50,
                     margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
                     child: ElevatedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.pushNamed(context, '/');
+                      },
                       child: Text('저장위치'),)
                   )
                 ],
